@@ -8,7 +8,7 @@ if (isset($_POST['code']) && $_POST['code'] !== null) {
     $answer = "guillotine";
 
     if (strtolower($code) === $answer) {
-        $msg = "Bonne réponse ! Le code est 1977 (la date du dernier comdamné)";
+        $msg = "Bonne réponse ! Le code est 2015 (la date du dernier comdamné)";
         $valid = TRUE;
     }else{
         $msg = "Essaie encore";
