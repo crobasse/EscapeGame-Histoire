@@ -14,7 +14,7 @@ if (isset($_POST['motCode']) && $_POST['motCode'] !== null) {
     $answer = "guillotine";
 
     if (strtolower($code) === $answer) {
-        $msg = "Bonne réponse ! Le code est 2015";
+        $msg = "Bonne réponse ! ";
         $valid = TRUE;
         $_SESSION["motCode"] = TRUE;
     } else {
@@ -28,7 +28,7 @@ if (isset($_POST['codeSub'])) {
         $answer = "apsc";
 
         if (strtolower($code) === $answer) {
-            $codeMsg = "Code bon";
+            $codeMsg = "Bonne réponse ! ";
             $codeValid = TRUE;
             $_SESSION["code"] = TRUE;
         } else {
