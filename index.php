@@ -41,7 +41,7 @@ if (isset($_POST['codeSub'])) {
 if ($_SESSION["motCode"] == TRUE && $_SESSION["code"] == TRUE) {
     echo "<script>alert('Seuls les faits survenus après le tournant de 2015 comptent. Une fois isolés, que les noms suivent le fil du temps, du plus récent au plus ancien.');</script>";
     session_destroy();
-    session_start();
+    header("Location: index.php");
 }
 
 ?>
