@@ -39,7 +39,7 @@ if (isset($_POST['codeSub'])) {
 }
 
 if ($_SESSION["motCode"] == TRUE && $_SESSION["code"] == TRUE) {
-    echo "<script>alert('Seuls les faits survenus après le tournant de 2015 comptent. Une fois isolés, que les noms suivent le fil du temps, du plus récent au plus ancien.');</script>";
+    echo "<script>alert('Seuls les faits survenus après le tournant de 2015 comptent. Une fois isolés, que les noms suivent le fil du temps, du plus récent au plus ancien, chacun porte une lettre en tête, rassemble les pour trouver le nom du dernier fusillé.');</script>";
     session_destroy();
 
 }
@@ -119,7 +119,7 @@ if ($_SESSION["motCode"] == TRUE && $_SESSION["code"] == TRUE) {
                                 </div>
                             </div>
 
-                            <div class="text-success mt-2 mb-1">
+                            <div class="<?= $codeValid ? 'text-success' : 'text-danger'; ?> mt-2 mb-1">
                                 <?= $codeMsg; ?>
                             </div>
 
